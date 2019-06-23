@@ -7,9 +7,13 @@ import React, { Component } from 'react';
 
 class App extends Component {
   render() {
+    const style = {
+      backgroundColor: 'black'
+    };
+
     return (
-      <div>
-        
+      <div style={style}>
+        hi there
       </div>
     );
   }
