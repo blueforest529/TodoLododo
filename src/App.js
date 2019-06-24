@@ -5,18 +5,12 @@
 // src/App.js
 import React, { Component } from 'react';
 
-class App extends Component {
-  render() {
-    const style = {
-      backgroundColor: 'black'
-    };
+const MyName = ({ name }) => {
+  return (
+    <div>
+      안녕하세요! 제 이름은 {name} 입니다.
+    </div>
+  );
+};
 
-    return (
-      <div style={style}>
-        hi there
-      </div>
-    );
-  }
-}
-
-export default App;
+export default MyName;
