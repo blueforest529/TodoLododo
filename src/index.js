@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import MyName from './MyName';
 //내가 만든 컴포넌트 불러올때
 import * as serviceWorker from './serviceWorker';
 
