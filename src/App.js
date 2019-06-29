@@ -9,7 +9,7 @@ import MyName from './MyName';
 class App extends Component {
   render() {
     return (
-      <MyName name="ÀÌÁ÷ÁØºñÁß" />
+      <MyName name="Ä¿¹ÔÇÏÀð" />
     );
   }
 }
