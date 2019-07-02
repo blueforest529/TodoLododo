@@ -9,7 +9,7 @@ import MyName from './MyName';
 class App extends Component {
   render() {
     return (
-      <MyName name="리액트 공부하자" />
+      <MyName name="리액트 공부해야해.." />
     );
   }
 }
