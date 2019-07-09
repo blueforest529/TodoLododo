@@ -1,7 +1,20 @@
+<<<<<<< HEAD
+=======
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+>>>>>>> 0d7e3cecbfdd07b0b5d445e08e784d14e4ac5cdd
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+<<<<<<< HEAD
 
 
 body {
@@ -10,3 +23,5 @@ body {
   font-family: sans-serif;
   background: #f9f9f9;
 }
+=======
+>>>>>>> 0d7e3cecbfdd07b0b5d445e08e784d14e4ac5cdd
