@@ -11,5 +11,4 @@ const Form = ({value, onChange, onCreate, onKeyPress}) => {
     </div>
   );
 };
-
 export default Form;
