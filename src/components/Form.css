@@ -7,7 +7,7 @@
     font-size: 1.25rem;
     outline: none;
     border: none;
-    border-bottom: 1px solid #c5f6fa;
+    border-bottom: 1px solid #f7e600;
   }
   
   .create-button {
@@ -16,7 +16,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: 1rem;
-    background: #22b8cf;
+    background: #f7e600;
     border-radius: 3px;
     color: white;
     font-weight: 600;
