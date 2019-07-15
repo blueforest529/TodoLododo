@@ -3,8 +3,8 @@
   }
   
   .form input {
-    flex: 1; /* 버튼을 뺀 빈 공간을 모두 채워줍니다 */
-    font-size: 1.25rem;
+    flex: 1; /* 버튼?�� �? �? 공간?�� 모두 채워줍니?�� */
+    font-size: 0.5rem;
     outline: none;
     border: none;
     border-bottom: 1px solid #f7e600;
