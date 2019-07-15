@@ -5,7 +5,7 @@ const TodoListTemplate = ({form, children}) => {
   return (
     <main className="todo-list-template">
       <div className="title">
-        일의 우선순위 정하기
+        오늘 업무의 우선순위 정하기
       </div>
       <section className="form-wrapper">
         {form}
