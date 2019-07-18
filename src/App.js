@@ -73,8 +73,8 @@ class App extends Component {
     const {
       handleChange,
       handleCreate,
-      handleKeyPress,
       handleToggle,
+      handleKeyPress,
       handleRemove
     } = this;
 
