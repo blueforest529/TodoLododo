@@ -68,6 +68,9 @@ class App extends Component {
     });
   }
 
+  handleDragg = (id) => { // 이벤트 핸들러 드래그 추가
+  }
+
   render() {
   const { input, todos } = this.state;
     const {
