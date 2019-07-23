@@ -14,10 +14,10 @@ class TodoItemList extends Component {
         <TodoItem
           id={id}
           text={text}
+          key={id}
           checked={checked}
           onToggle={onToggle}
           onRemove={onRemove}
-          key={id}
         />
       )
     );
