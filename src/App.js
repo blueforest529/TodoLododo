@@ -77,12 +77,13 @@ class App extends Component {
   render() {
   const { input, todos } = this.state;
     const {
-      handleChange,
-      handleCreate,
-      handleToggle,
       handleKeyPress,
       handleRemove,
-      handleDragg
+      handleDragg,
+      handleChange,
+      handleCreate,
+      handleToggle
+      
     } = this;
 
     return (
