@@ -68,7 +68,7 @@ class App extends Component {
   }
 
   handleDragg = (id) => { // 이벤트 핸들러 드래그 추가
-    
+    //드래그 핸들 이벤트 추가하기
   }
 
   render() {
