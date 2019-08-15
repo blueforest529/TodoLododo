@@ -71,6 +71,36 @@ class App extends Component {
     //드래그 핸들 이벤트 추가하기
   }
 
+  constructor(props) { 
+    super(props); 
+    this.state = {...props}; 
+  } 
+    
+  dragStart(e) { 
+    this.dragged = e.currentTarget; 
+    e.dataTransfer.effectAllowed = 'move'; 
+    e.dataTransfer.setData('text/html', this.dragged); 
+  } 
+    
+  dragEnd(e) { 
+    this.dragged.style.display = 'block'; 
+    this.dragged.parentNode.removeChild(placeholder); // update state 
+    var data = this.state.colors; 
+    var from = Number(this.dragged.dataset.id); 
+    var to = Number(this.over.dataset.id); 
+    if(from < to) to--; 
+    data.splice(to, 0, data.splice(from, 1)[0]); 
+    this.setState({colors: data}); 
+  } 
+    
+  dragOver(e) { 
+    e.preventDefault(); 
+    this.dragged.style.display = "none"; 
+    if(e.target.className === 'placeholder') return; 
+    this.over = e.target; 
+    e.target.parentNode.insertBefore(placeholder, e.target); 
+  }
+
   render() {
   const { input, todos } = this.state;
     const {
