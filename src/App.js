@@ -6,7 +6,6 @@ import TodoItemList from './components/TodoItemList';
 var placeholder = document.createElement("li"); 
 placeholder.className = "placeholder";
 
-
 class App extends Component {
   id = 3 // 이미 0,1,2 가 존재하므로 3으로 설정
   state = {
@@ -71,22 +70,18 @@ class App extends Component {
     });
   }
 
-  handleDragg = (id) => { // 이벤트 핸들러 드래그 추가
-    //드래그 핸들 이벤트 추가하기
-  }
-
   constructor(props) { 
     super(props); 
     this.state = {...props}; 
   } 
     
-  dragStart(e) { 
+  dragStart = (id) => {
     this.dragged = e.currentTarget; 
-    e.dataTransfer.effectAllowed = 'move'; 
     e.dataTransfer.setData('text/html', this.dragged); 
+    e.dataTransfer.effectAllowed = 'move'; 
   } 
     
-  dragEnd(e) { 
+  dragEnd = (id) => { 
     this.dragged.style.display = 'block'; 
     this.dragged.parentNode.removeChild(placeholder); // update state 
     var data = this.state.colors; 
@@ -97,7 +92,7 @@ class App extends Component {
     this.setState({colors: data}); 
   } 
     
-  dragOver(e) { 
+  dragOver = (id) => {
     e.preventDefault(); 
     this.dragged.style.display = "none"; 
     if(e.target.className === 'placeholder') return; 
@@ -110,7 +105,9 @@ class App extends Component {
     const {
       handleKeyPress,
       handleRemove,
-      handleDragg,
+      dragOver,
+      dragEnd,
+      dragStart,
       handleChange,
       handleCreate,
       handleToggle
