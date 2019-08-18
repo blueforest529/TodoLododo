@@ -49,7 +49,6 @@ class App extends Component {
     // 파라미터로 받은 id 를 가지고 몇번째 아이템인지 찾습니다.
     const index = todos.findIndex(todo => todo.id === id);
     const selected = todos[index]; // 선택한 객체
-
     const nextTodos = [...todos]; // 배열을 복사
 
     // 기존의 값들을 복사하고, checked 값을 덮어쓰기
@@ -111,7 +110,6 @@ class App extends Component {
       handleChange,
       handleCreate,
       handleToggle
-      
     } = this;
 
     return (
