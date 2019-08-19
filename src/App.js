@@ -11,9 +11,7 @@ class App extends Component {
   state = {
     input: '',
     todos: [
-      { id: 0, text: ' 1', checked: false },
-      { id: 1, text: ' 2', checked: true },
-      { id: 2, text: ' 3', checked: false }
+    
     ]
   }
 
