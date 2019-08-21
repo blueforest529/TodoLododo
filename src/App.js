@@ -102,9 +102,6 @@ class App extends Component {
     const {
       handleKeyPress,
       handleRemove,
-      dragOver,
-      dragEnd,
-      dragStart,
       handleChange,
       handleCreate,
       handleToggle
