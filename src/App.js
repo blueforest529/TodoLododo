@@ -116,6 +116,7 @@ class App extends Component {
           onCreate={handleCreate}
         />
       )}>
+        document.getElementById('app');
         <TodoItemList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
       </TodoListTemplate>
     );
